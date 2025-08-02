@@ -9,7 +9,7 @@ export default function ThemeWrapper({
   children: React.ReactNode;
 }) {
   const pathname = usePathname();
-  const isLoginPage = pathname === "/";
+  const isLoginPage = pathname === "/" || pathname === "/sign-up";
 
   useEffect(() => {
     const body = document.body;
