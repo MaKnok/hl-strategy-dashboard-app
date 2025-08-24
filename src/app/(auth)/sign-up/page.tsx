@@ -27,7 +27,7 @@ import Link from "next/link";
 export const strongPasswordRegex =
   /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^\w\s]).{8,}$/;
 
-const signUpFormSchema = z
+export const signUpFormSchema = z
   .object({
     username: z.string().min(5, "Username must be at least 5 characters"),
     email: z.string().email("Invalid email address"),
